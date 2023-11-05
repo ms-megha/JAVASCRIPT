@@ -5,47 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
         .main-container {
             height: 100vh;
             width: 100vw;
-
-
-        }
-
-        .heading {
-            font-size: large;
-            font-weight: bolder;
-            text-align: center;
-        }
-
-        .boxes {
             display: flex;
-            margin: 15px;
-            gap: 10px;
-            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
+        .heading{
+            font-size: larger;
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+        .boxes{
+            display: flex;
+            gap: 10px;
+        }
 
-        .color-box {
+        .button {
             height: 100px;
             width: 100px;
             border: 2px solid black;
         }
-        #blue{
+
+        #blue {
             background-color: blue;
         }
-        #green{
+
+        #green {
             background-color: green;
         }
-        #red{
+
+        #red {
             background-color: red;
         }
-        #grey{
+
+        #grey {
             background-color: grey;
+        }
+        .bottom-heading{
+            font-size: larger;
+            font-weight: bolder;
+            margin-top: 5px;
+            text-align: center;
         }
     </style>
 </head>
@@ -54,14 +59,34 @@
     <div class="main-container">
         <h2 class="heading">Color Theme Change</h2>
         <div class="boxes">
-            <div class="color-box" id="blue"></div>
-            <div class="color-box" id="green"></div>
-            <div class="color-box" id="red"></div>
-            <div class="color-box" id="grey"></div>
+            <div class="button" id="blue"></div>
+            <div class="button" id="green"></div>
+            <div class="button" id="red"></div>
+            <div class="button" id="grey"></div>
         </div>
+        <h2 class="bottom-heading">Try clicking on one of the colors above <div>to change the background color of this page</div></h2>
     </div>
     <script>
-        
+        const body = document.querySelector('body');
+        const buttons = document.querySelectorAll('.button');
+        buttons.forEach(function(button){
+            button.addEventListener('click', function(e){
+                console.log(e);
+                console.log(e.target);
+                if(e.target.id === 'green'){
+                    body.style.backgroundColor = e.target.id;
+                }
+                if(e.target.id === 'blue'){
+                    body.style.backgroundColor = e.target.id;
+                }
+                if(e.target.id === 'red'){
+                    body.style.backgroundColor = e.target.id;
+                }
+                if(e.target.id === 'grey'){
+                    body.style.backgroundColor = e.target.id;
+                }
+            });
+        });
     </script>
 </body>
 
