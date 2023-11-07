@@ -1,6 +1,7 @@
 const underWeight = document.querySelector('#under-weight').innerHTML
 const normalRenge = document.querySelector('#normal-renge').innerHTML
 const overWeight = document.querySelector('#overweight').innerHTML
+
 const form = document.querySelector('form')
 form.addEventListener('submit', function(e){
     e.preventDefault();
