@@ -29,7 +29,7 @@ body{
 }
 #date{
     height: 30px;
-    width: 150px;
+    width: 200px;
     padding: 5px;
     font-size: 15px;
     border-radius: 5px;
@@ -46,4 +46,11 @@ body{
     border: none;
     cursor: pointer;
     background-color: #FFFF00;
+}
+.showResult{
+    font-size: larger;
+    color: white;
+}
+.showResult span{
+    color:#FFFF00 ;
 }
