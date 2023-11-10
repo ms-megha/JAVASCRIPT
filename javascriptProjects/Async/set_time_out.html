@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Project</title>
+</head>
+<body>
+    <h1>My name is Megha</h1>
+    <button id="stop">Stop</button>
+
+
+    <script>
+        let heading = document.querySelector('h1')
+        const changeHeading = function(){
+            heading.innerHTML = "this is my test project"
+        }
+       const setTimeOut = setTimeout(changeHeading,5000);
+       document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(setTimeOut)
+       })
+    </script>
+</body>
+</html>
