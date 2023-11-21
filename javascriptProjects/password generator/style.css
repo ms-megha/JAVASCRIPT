@@ -28,38 +28,68 @@ h1 span{
     color: #193319;
     border-bottom: 2px solid ;
 }
-input{
+.input-field{
+    display: flex;
+    align-items: center;
+}
+
+input {
     margin-left: 15px;
     padding-left: 10px;
-    display: flex;
     height: 40px;
-    width: 450px;
-    /* border: 2px solid red; */
-}
-#password{
+    width: calc(100% - 50px); 
     border-radius: 7px;
     border: none;
     outline: none;
 }
+.input-field img{
+    height: 20px;
+    width: 30px;
+}
+#copy-btn{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#password {
+    width: calc(100% - 50px); 
+}
+.input-field button {
+    height: 40px;
+    margin-left: -50px; 
+    padding: 15px;
+    margin-bottom: 11px;
+    color: #193319;
+    border: none;
+    outline: none;
+    background-color: #b3ffb3; 
+    border-radius: 0 5px 5px 0; 
+}
+
 .btn{
     margin: 10px 15px;
     padding: 10px;
 }
 #p-btn{
-    height: 50px;
-    width: 150px;
+  
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 5px;
-    padding: 3px;
+    padding: 7px;
     color: #193319;
-    border: 2px solid #193319;
-    border-radius: 5px;
+    border: none;
+    outline: none;
 }
 #p-icon{
     height: 18px;
     width: 18px;
     margin-right: 3px;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%; 
+    }
 }
