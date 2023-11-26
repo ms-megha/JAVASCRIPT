@@ -50,6 +50,7 @@ input {
     border: none;
     outline: none;
     background: transparent;
+    cursor: pointer;
 }
 
 #password {
@@ -82,11 +83,13 @@ input {
     color: #193319;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 #p-icon{
     height: 18px;
     width: 18px;
     margin-right: 3px;
+    
 }
 @media screen and (max-width: 600px) {
     .container {
