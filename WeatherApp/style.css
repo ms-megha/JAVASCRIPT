@@ -53,6 +53,7 @@ body{
 .search-field button img{
     height: 20px;
     width: 20px;
+    padding: 5px;
 }
 .weather-information{
     display: flex;
@@ -67,5 +68,27 @@ body{
 .weather-information p{
     color: #fff;
     font-size: 25px;
+    margin: 10px;
     
+    
+}
+.weather-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.weather-details img{
+    width: 40px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.weather-information-details{
+    line-height: 8px;
+    margin-left: 7px;
+    font-size: 18px;
+    color: #fff;
 }
