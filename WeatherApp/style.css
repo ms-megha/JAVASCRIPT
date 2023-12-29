@@ -23,8 +23,8 @@ body{
     border-radius: 7px;
 }
 .search-field{
-    margin: 10px;
-    padding: 8px;
+    margin: 5px;
+    padding: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +55,7 @@ body{
     width: 20px;
     padding: 5px;
 }
+
 .weather-information{
     display: flex;
     flex-direction: column;
