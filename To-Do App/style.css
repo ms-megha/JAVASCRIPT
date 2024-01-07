@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.to-do{
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    border-radius: 12px;
+    
+}
